@@ -19,7 +19,7 @@ public class Department {
 		DeptId = deptId;
 	}
 	public String getDeptName() {
-		return abc;
+		return ;
 	}
 	public void setDeptName(String deptName) {
 		DeptName = deptName;
