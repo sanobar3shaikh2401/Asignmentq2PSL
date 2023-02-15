@@ -26,7 +26,7 @@ public class App
          Session session = factory.openSession();
          Transaction tx = session.beginTransaction();
 	    
-	    
+	    Transaction txx = session.beginTransaction();
          
          
          SQLQuery q = session.createSQLQuery("SELECT DeptId,MAX(Sal) from Employee where Sal NOT IN(SELECT MAX(Sal) FROM Employee GROUP BY DeptId) GROUP BY DeptId");
