@@ -111,7 +111,7 @@ public class operations {
 	    	
 	    	 Configuration cfg = new Configuration().configure().addAnnotatedClass(Employee.class).addAnnotatedClass(Department.class);
 	         SessionFactory factory = cfg.buildSessionFactory();
-	          session = factory.openSession();
+	         
 	         Transaction tx = session.beginTransaction();
 	        
 	        Employee e1 = new Employee();
